@@ -3,27 +3,6 @@
 using namespace std;
 
 int part1(vector<string> lines) { 
-    string line = lines[0];
-    
-    vector<char> fs(-1, line.size());
-    int i = 0;
-    int id = 0;
-    for (int j = 0; j < fs.size(); j+=2) {
-        int size = line[j];
-        int empty = line[j+1];
-
-        while (size--) {
-            fs[i] = id;
-            i++;
-        }
-        i+=empty;
-        id++;
-        
-    }
-
-    for (char& val : fs) {
-        cout << val << " ";
-    }
     return 0;
  }
 
